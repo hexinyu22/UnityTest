@@ -7,7 +7,7 @@ TextureImporter:
     second: body
   - first:
       213: -6553591179306775815
-    second: Gun
+    second: Bazooka
   - first:
       213: -1210496423414894039
     second: leftEye
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gun
+      name: Bazooka
       rect:
         serializedVersion: 2
         x: 301
