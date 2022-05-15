@@ -31,6 +31,7 @@ public class Gun : MonoBehaviour
                 bi.velocity = new Vector2(-speed, 0);
                 //Rigidbody2D bi = bulletInstance as Rigidbody2D;
             }
+            playerCtrl.anim.SetTrigger("shooting");
         }
 
     }

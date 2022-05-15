@@ -25,5 +25,9 @@ public class Rocket : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.Euler(0, 0, rotation));
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<Enemy>().Hurt();
+        }
     }
 }

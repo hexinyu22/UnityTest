@@ -11,7 +11,7 @@ public class PlayerCtrl : MonoBehaviour
     public bool bFaceRight = true;
     public bool bJump = false;
     public float JumpForce = 100;
-    Animator anim;
+    public Animator anim;
     private Transform mGroundCheck;
     
     void Start()
