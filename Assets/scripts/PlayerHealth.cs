@@ -70,6 +70,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             death();
+            anim.SetTrigger("Die");
             // return;
         }
 
