@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerCtrl : MonoBehaviour
 {
@@ -12,13 +13,19 @@ public class PlayerCtrl : MonoBehaviour
     public bool bJump = false;
     public float JumpForce = 100;
     public Animator anim;
+    public AudioClip[] JumpClips;
+    public AudioSource audioSource;
+    public AudioMixer audioMixer;
+
     private Transform mGroundCheck;
+    float mVolume = 0;
     
     void Start()
     {
         HeroBody = GetComponent<Rigidbody2D>();
         mGroundCheck = transform.Find("GroundCheck");
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -55,8 +62,17 @@ public class PlayerCtrl : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            mVolume++;
+            audioMixer.SetFloat("MasterVolume", mVolume);
+        }
         if (bJump)
         {
+            int i = Random.Range(0, JumpClips.Length);
+            //AudioSource.PlayClipAtPoint(JumpClips[i], transform.position);
+            audioSource .clip= JumpClips[i];
+            audioSource.Play();
             HeroBody.AddForce(Vector2.up * JumpForce);
             bJump = false;
             anim.SetTrigger("jump");

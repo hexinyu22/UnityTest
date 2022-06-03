@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        int index = Random.Range(0, 1);
+        int index = Random.Range(0, enemies.Length);
         Instantiate(enemies[index], transform.position, transform.localRotation);
     }
 

@@ -8,6 +8,7 @@ public class Background : MonoBehaviour
     public float parallaxFactor = 0.1f;
     public float framesParllaxFactor = 0.3f;
     public float smoothX = 4;
+    public float smoothY = 4;
     public Transform[] backgrounds;
 
     private Transform cam;
@@ -30,6 +31,18 @@ public class Background : MonoBehaviour
             float bkNewX = backgrounds[i].position.x + fparallax*(1 + i * framesParllaxFactor);
             Vector3 bkNewPos = new Vector3(bkNewX, backgrounds[i].position.y, backgrounds[i].position.z);
             backgrounds[i].position = Vector3.Lerp(backgrounds[i].position, bkNewPos, Time.deltaTime * smoothX);
+        }
+        camPrePos = cam.position;
+    }
+
+    void bkParallax2()
+    {
+        float fparallax = (camPrePos.y - cam.position.y) * parallaxFactor;
+        for (int i = 0; i < backgrounds.Length; i++)
+        {
+            float bkNewY = backgrounds[i].position.y + fparallax * (1 + i * framesParllaxFactor);
+            Vector3 bkNewPos = new Vector3(backgrounds[i].position.x,bkNewY,backgrounds[i].position.z);
+            backgrounds[i].position = Vector3.Lerp(backgrounds[i].position, bkNewPos, Time.deltaTime * smoothY);
         }
         camPrePos = cam.position;
     }

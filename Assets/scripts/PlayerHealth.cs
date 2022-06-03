@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public float repeatDamagePeriod = 2f;
     public float hurtForce = 10f;
     public float damageAmount = 10f;
+    public AudioClip[] ouches;
 
     private float lastHitTime;
     private Vector3 healthScale;
@@ -26,6 +27,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if (col.gameObject.tag == "Enemy")
         {
+            int i = Random.Range(0, ouches.Length);
+            AudioSource.PlayClipAtPoint(ouches[i], transform.position);
             //可以再次减血
             if (Time.time > lastHitTime + repeatDamagePeriod)
             {
@@ -58,8 +61,10 @@ public class PlayerHealth : MonoBehaviour
         //anim.SetTrigger("Die");
 
         //销毁血条
-        GameObject go = GameObject.Find("UI_HealthBar");
-        Destroy(go);
+       GameObject go = GameObject.Find("UI_HealthBar");
+        //go.SetActive(false);
+        //go.
+       // Destroy(go);
     }
     void TakeDamage(Transform enemy)
     {
