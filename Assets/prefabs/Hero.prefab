@@ -762,8 +762,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bombLaid: 0
   bombCount: 0
-  bombsAway: {fileID: 0}
-  bomb: {fileID: 0}
+  bombsAway: {fileID: 8300000, guid: d46e035a586e59b4fac9f574c65504a4, type: 3}
+  bomb: {fileID: 8853539153525866589, guid: d4f9c7648181d8f44bb428ef71590111, type: 3}
 --- !u!1 &3015951952315320553
 GameObject:
   m_ObjectHideFlags: 0

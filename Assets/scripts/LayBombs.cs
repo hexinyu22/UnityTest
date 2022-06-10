@@ -17,7 +17,7 @@ public class LayBombs : MonoBehaviour
 	void Awake()
 	{
 		// Setting up the reference.
-		bombHUD = GameObject.Find("ui_bombHUD").GetComponent<Text>();
+		//bombHUD = GameObject.Find("ui_bombHUD").GetComponent<Text>();
 	}
 
 
@@ -35,7 +35,7 @@ public class LayBombs : MonoBehaviour
 			// Play the bomb laying sound.
 			AudioSource.PlayClipAtPoint(bombsAway, transform.position);
 
-			// Instantiate the bomb prefab.
+			//Instantiate the bomb prefab.
 			Instantiate(bomb, transform.position, transform.rotation);
 		}
 
