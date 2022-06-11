@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3102835637076250715}
   - component: {fileID: 6876916166652533833}
-  - component: {fileID: 4561045647738687971}
+  - component: {fileID: 1510633072}
   m_Layer: 0
   m_Name: explosionCircle
   m_TagString: Untagged
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4561045647738687971
+--- !u!114 &1510633072
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,6 +91,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 489261872414161260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 554142418ff0b744d85cabbd1965b2c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 610e326493a16a44584c88dd3aed67fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnAwake: 1
+  awakeDestroyDelay: 0.1
+  findChild: 0
+  namedChild: 

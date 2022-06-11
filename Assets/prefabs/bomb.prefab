@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8853539153525866584}
   - component: {fileID: 8853539153525866591}
   - component: {fileID: 8853539153525866590}
+  - component: {fileID: 8901421618248399966}
   m_Layer: 12
   m_Name: bomb
   m_TagString: Untagged
@@ -121,6 +122,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8901421618248399966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853539153525866589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 430e702f056b2134fbdb4652a96d5394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombRadius: 7
+  bombForce: 100
+  boom: {fileID: 8300000, guid: 5dedcc0ed7db0474c9fcecea123ac715, type: 3}
+  fuse: {fileID: 8300000, guid: b06f833ffd86b3a40a34289bcc0306a3, type: 3}
+  fuseTime: 1.5
+  explosion: {fileID: 489261872414161260, guid: 5cad4a00d32a76546bf5882ff59b68d6,
+    type: 3}
 --- !u!1 &8853539153773771761
 GameObject:
   m_ObjectHideFlags: 0

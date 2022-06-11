@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     private SpriteRenderer healthBar;
-    public float health = 100f;
+    public float health = 50;
     public float repeatDamagePeriod = 2f;
     public float hurtForce = 10f;
     public float damageAmount = 10f;

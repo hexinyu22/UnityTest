@@ -47,7 +47,7 @@ MonoBehaviour:
   - {fileID: 196198623473852829, guid: e5d7460818145d042a4de15b7351f333, type: 3}
   - {fileID: 7506258553841524696, guid: 842ddaba1cb26b44c883a06f9fe872d7, type: 3}
   pickupDeliveryTime: 5
-  dropRangeLeft: -15
-  dropRangeRight: 15
+  dropRangeLeft: -8
+  dropRangeRight: 8
   highHealthThreshold: 75
   lowHealthThreshold: 25

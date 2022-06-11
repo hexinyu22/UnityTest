@@ -47,8 +47,8 @@ MonoBehaviour:
     type: 3}
   leftSpawnPosX: -24
   rightSpawnPosX: 24
-  minSpawnPosY: 4
-  maxSpawnPosY: 4
+  minSpawnPosY: 2.13
+  maxSpawnPosY: 2.13
   minTimeBetweenSpawns: 2
   maxTimeBetweenSpawns: 8
   minSpeed: 5
