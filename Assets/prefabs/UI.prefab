@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6147241735210635514
+--- !u!1 &9096386133864099418
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6147241735210635516}
-  - component: {fileID: 6147241735210635515}
+  - component: {fileID: 9096386133864099420}
+  - component: {fileID: 9096386133864099421}
   m_Layer: 0
-  m_Name: pickupManager
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6147241735210635516
+--- !u!4 &9096386133864099420
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6147241735210635514}
+  m_GameObject: {fileID: 9096386133864099418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 520.37524, y: 122.611824, z: -89.90714}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6147241735210635515
+--- !u!114 &9096386133864099421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6147241735210635514}
+  m_GameObject: {fileID: 9096386133864099418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74177767b8c149e4bb0e7dedf1569e64, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fc273acbb4d09244bca1fc458b5de94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickups:
-  - {fileID: 196198623473852829, guid: e5d7460818145d042a4de15b7351f333, type: 3}
-  - {fileID: 7506258553841524696, guid: 842ddaba1cb26b44c883a06f9fe872d7, type: 3}
-  pickupDeliveryTime: 5
-  dropRangeLeft: -8
-  dropRangeRight: 8
-  highHealthThreshold: 60
-  lowHealthThreshold: 40
+  mixer: {fileID: 24100000, guid: faae2287d196f6e45908eb581a0845e4, type: 2}
+  mPauseBtn: {fileID: 0}
+  mVolumeSlider: {fileID: 0}

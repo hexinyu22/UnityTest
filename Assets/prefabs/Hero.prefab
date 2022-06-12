@@ -532,7 +532,7 @@ MonoBehaviour:
   health: 100
   repeatDamagePeriod: 2
   hurtForce: 10
-  damageAmount: 20
+  damageAmount: 10
   ouches:
   - {fileID: 8300000, guid: 2f2c4385f41d18845b71ac9651f2a91e, type: 3}
   - {fileID: 8300000, guid: fc8e2cab02ef85d42a33e2ca61bd061d, type: 3}
